@@ -73,7 +73,7 @@
             <span>Masterwork</span>
           </a>
         </div>
-        <nav class="navbar">
+        <!-- <nav class="navbar">
           <a href="../Home/home.html" class="pink"> Home </a>
           <a href="../About/about.html"> About </a>
           <a href="../Service/service.html"> Services </a>
@@ -82,11 +82,65 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <a href="#"> Contact </a>
+          
           <button class="button">SCHEDULE A DEMO</button>
-        </nav>
-        <button class="navbar-toggler">
+        </nav> -->
+        <button
+          class="navbar-toggler btn--hideBorder"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse py-2" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="../Home/home.html" class="pink"> Home </a>
+                <a href="../About/about.html"> About </a>
+                <a href="../Service/service.html"> Services </a>
+                <div class="dropdown">
+                  <a
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-center"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Another action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <a href="#"> Contact </a>
+                <button class="button">SCHEDULE A DEMO</button>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -761,12 +815,38 @@
     <script>
       var owl = $(".owl-carousel");
       owl.owlCarousel({
-        items: 2,
+        // items: 1,
+        // loop: true,
+        // margin: 30,
+        // autoplay: false,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause: true,
         loop: true,
-        margin: 30,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
         autoplay: false,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          480: {
+            items: 1,
+            nav: false,
+          },
+          667: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 2,
+            nav: false,
+          },
+        },
       });
     </script>
 
