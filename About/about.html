@@ -63,31 +63,76 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/home.css" />
+
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
+    
+    <header id="header" class="header">
+      <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="#">
-            <i class="fa-solid fa-handshake"></i>
+            <i class="fa-regular fa-handshake"></i>
             <span>Masterwork</span>
           </a>
         </div>
-        <nav class="navbar">
-          <a href="../Home/home.html" class="pink"> Home </a>
-          <a href="../About/about.html"> About </a>
-          <a href="../Service/service.html"> Services </a>
-          <a href="#">
-            Pages
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <a href="#"> Contact </a>
-          <button class="button">SCHEDULE A DEMO</button>
+        
+        <button
+          class="navbar-toggler btn--hideBorder"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse py-2" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="../Home/home.html" class="pink"> Home </a>
+                <a href="../About/about.html"> About </a>
+                <a href="../Service/service.html"> Services </a>
+                <div class="dropdown">
+                  <a
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-center"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Blog post</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Blog single</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Landing page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <a href="#"> Contact </a>
+                <button class="button">SCHEDULE A DEMO</button>
+              </div>
+            </div>
+          </div>
         </nav>
-        <button class="navbar-toggler">
-              <i class="fa-solid fa-bars"></i>
-            </button>
       </div>
     </header>
 
@@ -271,10 +316,11 @@
                 />
 
                 <a
+                  onclick="playvideo()" 
                   href="#small-dialog"
                   class="popup-with-zoom-anim play-view text-center position-absolute"
                 >
-                  <span class="video-play-icon">
+                  <span id="icon" class="video-play-icon">
                     <i class="fa-solid fa-play"></i>
                   </span>
                 </a>
@@ -287,9 +333,48 @@
                 </div>
               </div>
             </div>
-            <div class="request">
-              <button>REQUEST A QUOTE</button>
-            </div>
+            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  REQUEST A QUOTE
+                </button>
+            <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered"">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get Free Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <input placeholder="Name" type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <input placeholder="Email" type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <input placeholder="Company" type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group mb-3">
+                              <input placeholder="Subject" type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary theme-button" data-toggle="modal" data-target="#exampleModal">Submit Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -614,9 +699,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script>
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
+      $('.owl-carousel').owlCarousel({
         dots: false,
         items: 4,
         loop: true,
@@ -624,8 +709,21 @@
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-      });
+        responsiveClass:true,
+        responsive:{
+          0:{
+            items:2,
+            },
+          768:{
+            items:2,
+            },
+          1000:{
+            items:4,
+            } 
+        }
+      })
     </script>
+
 
     <!-- swiperjs -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -641,5 +739,8 @@
         },
       });
     </script>
+
+    <script src="../index.js"></script>
+
   </body>
 </html>

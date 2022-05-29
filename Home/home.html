@@ -65,26 +65,15 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
+    <header id="header" class="header">
+      <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="#">
-            <i class="fa-solid fa-handshake"></i>
+            <i class="fa-regular fa-handshake"></i>
             <span>Masterwork</span>
           </a>
         </div>
-        <!-- <nav class="navbar">
-          <a href="../Home/home.html" class="pink"> Home </a>
-          <a href="../About/about.html"> About </a>
-          <a href="../Service/service.html"> Services </a>
-          <a href="#">
-            Pages
-            <i class="fa fa-chevron-down"></i>
-          </a>
-          <a href="#"> Contact </a>
-          
-          <button class="button">SCHEDULE A DEMO</button>
-        </nav> -->
+
         <button
           class="navbar-toggler btn--hideBorder"
           type="button"
@@ -119,17 +108,17 @@
                   >
                     <li>
                       <a class="dropdown-item bg-transparent" href="#"
-                        >Action</a
+                        >Blog post</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item bg-transparent" href="#"
-                        >Another action</a
+                        >Blog single</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item bg-transparent" href="#"
-                        >Something else here</a
+                        >Landing page</a
                       >
                     </li>
                   </ul>
@@ -578,6 +567,100 @@
               </div>
             </div>
           </div>
+
+          <!-- small -->
+          <div id="tab" class="sm-tab">
+            <h2
+              onclick="projectOpen(event)"
+              id="project-one"
+              class="tab-title"
+              data-target="tab-item1"
+            >
+              <i class="fa-solid fa-caret-up"></i>
+              Project One
+            </h2>
+            <div id="tab-item1" class="tab-item">
+              <div class="row mt-4 flex-column">
+                <div class="col col-md-6">
+                  <h2>Why a visual identity system is more memorable</h2>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <button class="mb-3">know more</button>
+                </div>
+                <div class="col-img col-md-6 mt-md-0 mt-5">
+                  <img src="./img/b4.jpeg" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab" class="sm-tab">
+            <h2
+              onclick="projectOpen(event)"
+              id="project-two"
+              class="tab-title"
+              data-target="tab-item2"
+            >
+              <i class="fa-solid fa-caret-up"></i>
+              Project Two
+            </h2>
+            <div id="tab-item2" class="tab-item">
+              <div class="row mt-4 flex-column">
+                <div class="col-img col-md-6">
+                  <img src="./img/b5.jpeg" class="img-fluid" alt="" />
+                </div>
+                <div class="col col-md-6 mt-md-0 mt-5">
+                  <h2>Make website that looks Lorem, ipsum dolor.</h2>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <button>know more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab" class="sm-tab">
+            <h2
+              onclick="projectOpen(event)"
+              id="project-three"
+              class="tab-title"
+              data-target="tab-item3"
+            >
+              <i class="fa-solid fa-caret-up"></i>
+              Project Three
+            </h2>
+            <div
+              style="border-bottom: 1px solid rgb(red, green, blue)"
+              id="tab-item3"
+              class="tab-item"
+            >
+              <div class="row mt-4 flex-column">
+                <div class="col col-md-6">
+                  <h2>Why a visual identity system is more memorable</h2>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <button class="mb-3">know more</button>
+                </div>
+                <div class="col-img col-md-6 mt-md-0 mt-5">
+                  <img src="./img/b6.jpg" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
         </main>
       </div>
     </section>
@@ -789,6 +872,9 @@
     <a href="#" class="backtotop cd-top text-replace js-cd-top">
       <i class="fa-solid fa-angle-up"></i>
     </a>
+
+    <!-- js -->
+    <script src="../index.js"></script>
 
     <!-- boosstrap -->
     <script
