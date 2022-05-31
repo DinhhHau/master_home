@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterwork</title>
+    <!-- font gg  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./CSS-contact/style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header id="header" class="header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="../Home/home.html">
+            <i class="fa-regular fa-handshake"></i>
+            <span>Masterwork</span>
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler btn--hideBorder"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse py-2" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="../Home/home.html"> Home </a>
+                <a href="../About/about.html"> About </a>
+                <a href="../Service/service.html"> Services </a>
+                <div class="dropdown">
+                  <a
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-center"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="../blog-post/Blog Posts.html"
+                        >Blog post</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="../single-post/single-post.html"
+                        >Blog single</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item bg-transparent" href="#"
+                        >Landing page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <a href="./contact.html" class="pink"> Contact </a>
+                <button class="button">SCHEDULE A DEMO</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    <!-- mini nav  -->
+    <section class="mini-nav">
+      <div class="container">
+        <div class="mininav-item">
+          <nav style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      
+
+
+    </section>
+    <!-- /mini nav  -->
+    <!-- contact us  -->
+    <section class="contact-us"> 
+      <div class="container py5">
+        <div class="contact-us-item">
+          <div class="contact-us-header mb-5">
+            <h1 class="header-section">Contact Us</h1>
+            
+          </div>
+          <div class="contact-us-items  ">
+            <div class="contact-left col-lg-6 text-center">
+              <img src="../images/contact.jpg" alt="" class="img-curve img-fluid">
+            </div>
+            <div class="contact-right col-lg-6 position-relative ">
+              <h2 class="header-section">Drop us a Message</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laudantium iste repellat, fugit assumenda tenetur.</p>
+              <form method="post">
+                <div class="main-input">
+                  <input type="text" name="name" placeholder="Enter Your Name" class="contact-input" required>
+                  <input type="email" name="email" placeholder="Enter Your Mail" class="contact-input" required >
+                  <input type="email" name="email" placeholder="Subject" class="contact-input" required>
+                  <textarea class="contact-textarea contact-input" name="Message" placeholder="Enter your message" required></textarea>
+                </div>
+                
+                
+              </form>
+              <div class="text-right">
+              <button class="btn btn-outline-danger form-button">SEND</button>
+  
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact us  -->
+    <!-- get in touch -->
+    <section class="get-in-touch">
+      <div class="container">
+        <div class="get-in-touch-item">
+          <div class="get-touch-header">
+            <h6 class="text-center">GET IN TOUCH</h6>
+            <h3 class="header-section text-center">We're here to help</h3>
+            <p class="text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at, libero repellendus </br> reprehenderit cupiditate culpa incidunt </p>
+          </div>
+
+          <div class="get-touch-content">
+            <div class="touch-info text-center">
+              <div class="icon">
+                <span class="fa fa-location-arrow"></span>
+              </div>
+              <div class="contact-detail mt-3">
+                <h1>Our head office address:</h1>
+                <p>8th-block road, cross avenue, Lorem dolor sit, New York, USA</p>
+              </div>
+
+            </div>
+            <div class="touch-info text-center">
+              <div class="icon">
+                <span class="fa fa-phone"></span>
+              </div>
+              <div class="contact-detail mt-3">
+                <h1>Call for help:</h1>
+                <p><a href="+040-123-456-88">+040-123-456-88</a></p>
+                <p><a href="+040-123-456-89">+040-123-456-89</a></p>
+
+              </div>
+
+            </div>
+            <div class="touch-info text-center">
+              <div class="icon">
+                <span  class="fa-regular fa-envelope-open"></span>
+              </div>
+              <div class="contact-detail mt-3">
+                <h1>Mail Us for information:</h1>
+                <p><a href="mailto:info@masterwork.com">info@masterwork.com</a></p>
+                <p><a href="mailto:masterwork@support.com">masterwork@support.com</a></p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- map  -->
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8399434920516!2d106.72669611494162!3d10.746816162677863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752581788447e5%3A0x6ab955eff9a7a1d4!2zVGhlIENvZmZlZSBIb3VzZSAtIEh14buzbmggVOG6pW4gUGjDoXQ!5e0!3m2!1svi!2s!4v1650181252032!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- /map  -->
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="col-big">
+            <div class="row-small">
+              <div class="col-small">
+                <h3>Company</h3>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Branches</a>
+                  </li>
+                  <li><a href="#">Latest Media</a></li>
+                  <li><a href="#">About Our Company</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Our Services</h3>
+                <ul>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Terms</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Landing Page</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          
+
+          </div>
+          <div class="col-big">
+            <h3>Newsletter</h3>
+            <div class="right-col">
+              <h4>Get the latest updates and offers.</h4>
+              <form action="#" class="subscribe" method="post">
+                <input type="email" name="email" placeholder="Email Adress" required>
+                <button type="submit">Go</button>
+                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+              </form>
+            </div>
+          </div> 
+        </div>
+        <div class="footer-below">
+          <div class="below-right">
+            © 2020 Masterwork. All rights reserved | Designed by
+            <a href="#">W3Layouts</a>
+          </div>
+          <div class="below-left">
+            <ul class="social">
+              <li><a href="#facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a></li>
+              <li><a href="#linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a></li>
+              <li><a href="#twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a></li>
+              <li><a href="#google">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a></li>
+              <li><a href="#github">
+                <i class="fa-brands fa-github"></i>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- BUTTON TO UP -->
+<a
+href="#"
+class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+>
+<i class="fa-solid fa-angle-up"></i>
+</a>
+
+
+<!-- BACKTOTOP -->
+<script src="./back-to-top-master/assets/js/main.js"></script>
+<script src="./back-to-top-master/assets/js/util.js"></script>
+<!-- jQuery -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+<script src="../index.js"></script>
+  </body>
+</html>

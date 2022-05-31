@@ -31,7 +31,7 @@
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
 }
-.scroll-header{
+.scroll-header {
   height: 70px;
 }
 .header .container {
@@ -837,7 +837,7 @@ nav#breadcrumbs a:hover {
 
 @media screen and (max-width: 992px) {
   .breadcrumbs .container {
-    padding:0;
+    padding: 0;
   }
   .dropdown-menu-center {
     text-align: center;
@@ -967,6 +967,13 @@ nav#breadcrumbs a:hover {
 }
 
 @media screen and (max-width: 576px) {
+  .about2 .row .col-item {
+    flex: 1 0 100%;
+    width: 100%;
+  }
+  .about2 .row .col-3 {
+    margin-top: 0;
+  }
   .features {
     padding: 48px 0 0 0;
   }
